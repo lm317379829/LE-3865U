@@ -1,4 +1,4 @@
-3865U-Coolsnowwolf/LEDE编译
+3865U-Coolsnowwolf/lede 编译
 
 源码：https://github.com/coolsnowwolf/lede
 
