@@ -239,7 +239,13 @@ sed -i 's/ (CIFSD 内核)//g' package/lean/luci-app-cifsd/po/zh-cn/cifsd.po
 sed -i 's/解锁网易云灰色歌曲/网易解锁/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
 
 #luci-app-dockerman
-sed -i 's/Docker CE 容器/容器管理/g' package/lean/luci-app-docker/po/zh-cn/docker.po
+git clone https://github.com/lisaac/luci-app-dockerman.git
+mv luci-app-dockerman/applications/luci-app-dockerman package/lean/luci-app-dockerman
+rm -rf luci-app-dockerman
+sed -i 's/存储卷/存储/g' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "Docker"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "容器"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 
 #kernel-graphics
 ver=$(cat target/linux/x86/Makefile | grep KERNEL_PATCHVER | cut -d '=' -f2)
