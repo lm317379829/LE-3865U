@@ -242,6 +242,7 @@ sed -i 's/解锁网易云灰色歌曲/网易解锁/g' package/lean/luci-app-unbl
 git clone https://github.com/lisaac/luci-app-dockerman.git
 mv luci-app-dockerman/applications/luci-app-dockerman package/lean/luci-app-dockerman
 rm -rf luci-app-dockerman
+sed -i 's/+docker-ce \\//g' package/lean/luci-app-dockerman/Makefile
 sed -i 's/存储卷/存储/g' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgid "Docker"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
