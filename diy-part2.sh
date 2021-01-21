@@ -174,39 +174,38 @@ sed -i 's/大师 Plus+//g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
 
 #luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld.git 
-mkdir feeds/helloworld
-mv helloworld/luci-app-ssr-plus feeds/helloworld/luci-app-ssr-plus
+mv helloworld/luci-app-ssr-plus package/lean/luci-app-ssr-plus
 rm -rf helloworld
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "ShadowSocksR Plus+"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "翻墙工具"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "AlterId"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "额外ID"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "VmessId (UUID)"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "UUID"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Camouflage Type"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "伪装方式"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Uplink Capacity"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "上传速率"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Downlink Capacity"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "下载速率"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Read Buffer Size"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "读出缓存"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Write Buffer Size"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "写入缓存"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Congestion"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "拥塞控制"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo "" >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgid "Shadowsocks New Version"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
-echo 'msgstr "Shadowsocks"' >> feeds/helloworld/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "ShadowSocksR Plus+"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "翻墙工具"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "AlterId"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "额外ID"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "VmessId (UUID)"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "UUID"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Camouflage Type"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "伪装方式"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Uplink Capacity"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "上传速率"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Downlink Capacity"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "下载速率"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Read Buffer Size"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "读出缓存"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Write Buffer Size"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "写入缓存"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Congestion"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "拥塞控制"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgid "Shadowsocks New Version"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
+echo 'msgstr "Shadowsocks"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
 
 #luci-app-SQM QOS
 sed -i '/创建日志文件/d' feeds/luci/applications/luci-app-sqm/po/zh-cn/sqm.po
@@ -315,4 +314,3 @@ sed -i 's/"动态 DNS"/"域名绑定"/g' feeds/luci/applications/luci-app-ddns/p
 #sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/node_list.lua
 #sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/rule.lua
 #sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/rule.lua
-
