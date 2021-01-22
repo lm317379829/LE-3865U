@@ -175,6 +175,9 @@ sed -i 's/大师 Plus+//g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
 #luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld.git 
 mv helloworld/luci-app-ssr-plus package/lean/luci-app-ssr-plus
+mv helloworld/naiveproxy package/lean/naiveproxy
+mv helloworld/tcping package/lean/tcping
+mv helloworld/trojan-go package/lean/trojan-go
 rm -rf helloworld
 echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
 echo 'msgid "ShadowSocksR Plus+"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
