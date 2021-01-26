@@ -178,6 +178,8 @@ mv helloworld/luci-app-ssr-plus package/lean/luci-app-ssr-plus
 mv helloworld/naiveproxy package/lean/naiveproxy
 mv helloworld/tcping package/lean/tcping
 mv helloworld/trojan-go package/lean/trojan-go
+mv helloworld/xray package/lean/xray
+mv helloworld/ipt2socks-alt package/lean/ipt2socks-alt
 rm -rf helloworld
 echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
 echo 'msgid "ShadowSocksR Plus+"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
