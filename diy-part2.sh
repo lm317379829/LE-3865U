@@ -42,21 +42,6 @@ echo "" >> package/lean/luci-app-vssr/po/zh-cn/vssr.po
 echo 'msgid "Shadowsocks New Version"' >> package/lean/luci-app-vssr/po/zh-cn/vssr.po
 echo 'msgstr "Shadowsocks"' >> package/lean/luci-app-vssr/po/zh-cn/vssr.po
 
-#luci-app-minidlna
-cat feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po | sed ':label;N;s/\n/123456/;b label' >feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/"Allow wide links:"123456msgstr ""/"Allow wide links:"123456msgstr "允许广域链接"/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/msgid ""123456"Set this to allow serving content outside the media root (via symlinks)."/msgid "Set this to allow serving content outside the media root (via symlinks)."/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/"Set this to allow serving content outside the media root (via symlinks)."123456msgstr ""/"Set this to allow serving content outside the media root (via symlinks)."123456msgstr "允许通过软链接播放媒体目录外的文件。"/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/miniDLNA守护程序/MiniDLNA守护程序/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/msgstr "Port for HTTP (descriptions, SOAP, media transfer) traffic."/msgstr "HTTP 传输端口。"/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/设置miniDLNA/设置MiniDLNA/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/miniDLNA服务/MiniDLNA服务/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/msgstr "miniDLNA"/msgstr "媒体中心"/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/miniDLNA 状态/MiniDLNA 状态/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/msgstr "miniSSDP socket："/msgstr "MiniSSDP Socket："/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-sed -i 's/123456/\n/g' feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp
-mv feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po.tmp feeds/luci/applications/luci-app-minidlna/po/zh-cn/minidlna.po
-
 #luci-app-mwan3
 cat feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po | sed ':label;N;s/\n/123456/;b label' >feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po.tmp
 sed -i 's/"Detail"123456msgstr ""/"Detail"123456msgstr "细节"/g' feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po.tmp
@@ -86,9 +71,6 @@ sed -i 's/"specified!"123456msgstr ""/"specified!"123456msgstr "警告：规则 
 sed -i 's/"Waiting for command to complete..."123456msgstr ""/"Waiting for command to complete..."123456msgstr "等待命令完成..."/g' feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po.tmp
 sed -i 's/123456/\n/g' feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po.tmp
 mv feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po.tmp feeds/luci/applications/luci-app-mwan3/po/zh-cn/mwan3.po
-
-#luci-app-mwan3helper
-sed -i 's/MWAN3 分流助手/分流助手/g' package/lean/luci-app-mwan3helper/po/zh-cn/mwan3helper.po
 
 #luci-app-upnp
 cat feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po |sed ':label;N;s/\n/123456/;b label' >feeds/luci/applications/luci-app-upnp/po/zh-cn/upnp.po.tmp
@@ -137,15 +119,6 @@ sed -i 's/msgid "NAS"//g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/msgstr "网络存储"//g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/msgstr "FTP 服务器"/msgstr "FTP设置"/g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 
-#luci-app-amule
-sed -i 's/NAS/SERVICES/g' package/lean/luci-app-amule/luasrc/controller/amule.lua
-sed -i 's/nas/services/g' package/lean/luci-app-amule/luasrc/controller/amule.lua
-sed -i 's/nas/services/g' package/lean/luci-app-amule/luasrc/view/amule/detail_logview.htm
-sed -i 's/nas/services/g' package/lean/luci-app-amule/luasrc/view/amule/overview_status.htm
-sed -i 's/nas/services/g' package/lean/luci-app-amule/luasrc/view/amule/webshell.htm
-sed -i 's/aMule设置/电驴设置/g' package/lean/luci-app-amule/po/zh-cn/amule.po
-
-
 #luci-app-flowoffload
 sed -i 's/Flow Offload 转发加速/硬件加速/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
 sed -i 's/Linux Flow offload 转发/Linux Flow OFFload 转发/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
@@ -158,7 +131,6 @@ sed -i '/hw.default/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowo
 sed -i '/hw.rmempty/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
 sed -i '/hw.description/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
 sed -i '/hw:depends/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-
 
 #luci-app-SFE
 sed -i 's/SFE 转发加速/硬件加速/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
@@ -174,12 +146,11 @@ sed -i 's/大师 Plus+//g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
 
 #luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld.git 
-mv helloworld/luci-app-ssr-plus package/lean/luci-app-ssr-plus
-mv helloworld/naiveproxy package/lean/naiveproxy
-mv helloworld/tcping package/lean/tcping
-mv helloworld/trojan-go package/lean/trojan-go
-mv helloworld/xray package/lean/xray
-mv helloworld/ipt2socks-alt package/lean/ipt2socks-alt
+dir=$(ls  -l helloworld/  | awk  '/^d/ {print $NF}')
+for  i  in  $dir
+do
+     mv helloworld/$i package/lean/$i
+done 
 rm -rf helloworld
 echo "" >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
 echo 'msgid "ShadowSocksR Plus+"' >> package/lean/luci-app-ssr-plus/po/zh-cn/ssr-plus.po
@@ -220,25 +191,6 @@ sed -i 's/日志等级。/日志等级/g' feeds/luci/applications/luci-app-sqm/p
 #rc.local
 sed -i '$i\ifconfig eth0 192.168.0.2 netmask 255.255.255.0\niptables -I forwarding_rule -d 192.168.0.1 -j ACCEPT\niptables -t nat -I postrouting_rule -d 192.168.0.1 -j MASQUERADE\nhdparm -S 60 /dev/sdb\n' package/base-files/files/etc/rc.local
 
-#luci-app-arpbind
-echo '' >>package/lean/luci-app-arpbind/po/zh-cn/arpbind.po
-echo 'msgid "MAC Address"' >>package/lean/luci-app-arpbind/po/zh-cn/arpbind.po
-echo 'msgstr "MAC地址"' >>package/lean/luci-app-arpbind/po/zh-cn/arpbind.po
-
-#luci-app-baidupcs-web
-sed -i 's/+BaiduPCS-Web //g' package/lean/luci-app-baidupcs-web/Makefile
-sed -i 's/nas/services/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
-sed -i 's/BaiduPCS Web/百度网盘/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
-
-#luci-app-verysync
-sed -i 's/+verysync//g' package/lean/luci-app-verysync/Makefile
-sed -i 's/nas/services/g' package/lean/luci-app-verysync/luasrc/controller/verysync.lua
-
-#luci-app-cifsd
-sed -i 's/nas/services/g' package/lean/luci-app-cifsd/luasrc/controller/cifsd.lua
-sed -i 's/NAS/services/g' package/lean/luci-app-cifsd/luasrc/controller/cifsd.lua
-sed -i 's/ (CIFSD 内核)//g' package/lean/luci-app-cifsd/po/zh-cn/cifsd.po
-
 #luci-app-unblockmusic
 sed -i 's/解锁网易云灰色歌曲/网易解锁/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
 
@@ -251,6 +203,25 @@ sed -i 's/存储卷/存储/g' package/lean/luci-app-dockerman/po/zh-cn/dockerman
 echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgid "Docker"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgstr "容器"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+
+#luci-app-udpxy
+sed -i 's/udpxy"))/组播转发"))/g' feeds/luci/applications/luci-app-udpxy/luasrc/controller/udpxy.lua
+sed -i 's/udpxy is a UDP-to-HTTP multicast traffic relay daemon, here you can configure the settings./UDPXY是UDP到HTTP的组播流量中继守护程序，您可以在此处配置设置。/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Respawn/刷新/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Bind IP\/Interface/绑定IP\/接口/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Source IP\/Interface/源IP\/接口/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Buffer size/缓冲区大小/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Buffer messages/缓冲区消息/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Buffer time/缓冲时间/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Nice increment/优先级增量/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+sed -i 's/Multicast subscription renew/组播订阅续订/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
+
+#luci-app-eqos
+git clone https://github.com/swxk521/luci-app-eqos.git package/lean/luci-app-eqos
+
+#luci-theme-argon 
+rm -rf package/lean/luci-theme-argon  
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon 
 
 #kernel-graphics
 ver=$(cat target/linux/x86/Makefile | grep KERNEL_PATCHVER | cut -d '=' -f2)
@@ -269,53 +240,3 @@ echo '# DRM_I915_SW_FENCE_CHECK_DAG is not set' >>target/linux/x86/config-${ver}
 echo '# DRM_I915_DEBUG_GUC is not set' >>target/linux/x86/config-${ver}
 echo '# DRM_I915_LOW_LEVEL_TRACEPOINTS is not set' >>target/linux/x86/config-${ver}
 echo '# DRM_I915_DEBUG_VBLANK_EVADE is not set' >>target/linux/x86/config-${ver}
-
-#luci-app-udpxy
-sed -i 's/udpxy"))/组播转发"))/g' feeds/luci/applications/luci-app-udpxy/luasrc/controller/udpxy.lua
-sed -i 's/udpxy is a UDP-to-HTTP multicast traffic relay daemon, here you can configure the settings./UDPXY是UDP到HTTP的组播流量中继守护程序，您可以在此处配置设置。/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Respawn/刷新/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Bind IP\/Interface/绑定IP\/接口/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Source IP\/Interface/源IP\/接口/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Buffer size/缓冲区大小/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Buffer messages/缓冲区消息/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Buffer time/缓冲时间/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Nice increment/优先级增量/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-sed -i 's/Multicast subscription renew/组播订阅续订/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
-
-#luci-app-ddns
-sed -i 's/"动态 DNS"/"域名绑定"/g' feeds/luci/applications/luci-app-ddns/po/zh-cn/ddns.po
-
-#luci-app-passwall
-#sed -i 's/msgstr "PassWall"/msgstr "翻墙工具"/g' package/lienol/lienol/luci-app-passwall/po/zh-cn/passwall.po
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/controller/passwall.lua
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/controller/passwall.lua
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/rule_version.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/rule_version.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/brook_version.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/brook_version.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/v2ray_version.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/v2ray_version.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/passwall_version.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/passwall_version.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/kcptun_version.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/rule/kcptun_version.htm
-#sed -i 's/\/vpn\//\/services\//g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/status.htm
-#sed -i 's/\/VPN\//\/SERVICES\//g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/status.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/tips.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/tips.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/status2.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/global/status2.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/node_list/link_add_node.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/node_list/link_add_node.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/node_list/node_list.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/node_list/node_list.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/log/log.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/log/log.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/haproxy/status.htm
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/view/passwall/haproxy/status.htm
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/node_config.lua
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/node_config.lua
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/node_list.lua
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/node_list.lua
-#sed -i 's/vpn/services/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/rule.lua
-#sed -i 's/VPN/SERVICES/g' package/lienol/lienol/luci-app-passwall/luasrc/model/cbi/passwall/rule.lua
