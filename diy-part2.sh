@@ -216,9 +216,6 @@ sed -i 's/Buffer time/缓冲时间/g' feeds/luci/applications/luci-app-udpxy/lua
 sed -i 's/Nice increment/优先级增量/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
 sed -i 's/Multicast subscription renew/组播订阅续订/g' feeds/luci/applications/luci-app-udpxy/luasrc/model/cbi/udpxy.lua
 
-#luci-app-eqos
-git clone https://github.com/swxk521/luci-app-eqos.git package/lean/luci-app-eqos
-
 #luci-theme-argon 
 rm -rf package/lean/luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon 
